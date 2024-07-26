@@ -2,6 +2,16 @@
 
 Este script em Python converte um arquivo de texto em um arquivo CSV no formato Anki, facilitando a criação de cartões para estudos.
 
+## Ferramentas utilizadas
+> Python
+
+### Pré-requisitos
+
+> Python 3.x
+
+> Biblioteca csv
+
+
 ## Funcionalidades
 
 - Converte blocos de texto separados por duas novas linhas (`\n\n`) em entradas CSV.
@@ -9,23 +19,20 @@ Este script em Python converte um arquivo de texto em um arquivo CSV no formato 
 - Substitui uma sequência específica (por padrão, `\n`) por quebras de linha reais no verso do cartão.
 
 ## Como Usar
+### Formato do arquivo de texto:
 
-### Pré-requisitos
+```
+frente1;verso1
 
-- Python 3.x
-- Biblioteca `csv`
+frente2;verso2
 
-### Execução
+frente3;verso3
+```
 
-
-Para executar o script, utilize a linha de comando conforme o exemplo abaixo:
-
-
-
-<!-- 
-```bash
-python script.py <caminho_para_arquivo_txt> <caminho_para_arquivo_csv> [--delimiter <delimitador>] [--line_break <quebra_de_linha>] -->
-
+### Compilar no terminal 
+``
+python script.py entrada.txt saida.csv --delimiter ";" --line_break "\\n"
+``
 
 ### Argumentos
 * txt_file: Caminho para o arquivo de texto de entrada.
@@ -33,14 +40,7 @@ python script.py <caminho_para_arquivo_txt> <caminho_para_arquivo_csv> [--delimi
 * --delimiter: (Opcional) Delimitador usado no arquivo de texto. Padrão é ;.
 * --line_break: (Opcional) Sequência usada no arquivo de texto para representar quebras de linha. Padrão é \n.
 
-### Exemplo
-'''
-python script.py entrada.txt saida.csv --delimiter ";" --line_break "\\n"
-'''
-
-Formato do arquivo de texto:
-'''
-frente1;verso1\\nlinha2
-frente2;verso2\\nlinha2
-frente3;verso3
-'''
+## 📁 Acesso ao projeto 
+```
+https://github.com/RianValcanaia/Conversor-Anki-Cards
+```
